@@ -1,0 +1,86 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\fmodern\fcharset0 Courier-Oblique;}
+{\colortbl;\red255\green255\blue255;\red191\green100\blue38;\red32\green32\blue32;\red153\green168\blue186;
+\red109\green109\blue109;\red133\green96\blue154;\red254\green187\blue91;\red86\green132\blue173;}
+{\*\expandedcolortbl;;\csgenericrgb\c74902\c39216\c14902;\csgenericrgb\c12549\c12549\c12549;\csgenericrgb\c60000\c65882\c72941;
+\csgenericrgb\c42745\c42745\c42745;\csgenericrgb\c52157\c37647\c60392;\csgenericrgb\c99608\c73333\c35686;\csgenericrgb\c33725\c51765\c67843;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf2 \cb3 import \cf4 javax.swing.ImageIcon\cf2 ;\
+import \cf4 java.awt.*\cf2 ;\
+import \cf4 java.util.Random\cf2 ;\
+import \cf4 java.util.ArrayList\cf2 ;\
+\
+\
+public class \cf4 Flower \cf2 extends \cf4 Plant \{\
+    \cf5 //fields\
+    \cf2 private \cf4 ImageIcon \cf6 image\cf2 ;\
+    private \cf4 Point \cf6 pos\cf2 ;\
+\
+\
+    \cf5 //Constructors\
+    \cf2 public \cf7 Flower \cf4 () \{\
+        \cf5 //instantiating\
+      /*  image = new ImageIcon();\
+        pos = new Point();\
+        int x;\
+        int y; */\
+\
+\
+    \cf4 \}\
+    \cf2 public \cf7 Flower\cf4 (\cf2 int \cf4 x\cf2 , int \cf4 y)\{\
+      \cf5 /*  ArrayList<String> imageArray = new ArrayList<String>();\
+        imageArray.add("flower0.png");\
+        imageArray.add("flower1.png");\
+        imageArray.add("flower2.png");\
+        imageArray.add("flower3.png");\
+\
+        Random rand = new Random();\
+        int upperbound = 5-1;\
+        int int_random = rand.nextInt(upperbound);\
+        image = new ImageIcon(imageArray.get(int_random));\
+        //image = null;\
+        pos = new Point(x, y); */\
+    \cf4 \}\
+\
+    \cf2 public void \cf7 draw \cf4 (Graphics a)\{\
+        \cf5 //if statement (if the image is null then it will print the word Flower.\
+      /*  if(image == null)\{\
+            a.setColor(Color.WHITE);\
+            a.drawString("Flower", pos.x, pos.y);\
+\
+        \}\
+        else \{\
+            //image.paintIcon(null, a, pos.x, pos.y);\
+             drawFlower(a,pos.x,pos.y,40,Color.PINK);\
+\
+        \}\
+            */\
+\
+\
+    \cf4 \}\
+    \cf5 //extra credits construct for Drawing flowers.\
+    \cf2 public static void \cf7 drawFlower\cf4 (Graphics a\cf2 , int \cf4 x\cf2 , int \cf4 y\cf2 , int \cf4 size\cf2 , \cf4 Color c)\{\
+        a.setColor(Color.
+\f1\i \cf6 GREEN
+\f0\i0 \cf4 .darker().darker())\cf2 ;\
+        \cf4 a.fillRect(x + \cf8 17\cf2 ,\cf4 y + \cf8 20 \cf2 ,\cf8 7\cf2 ,\cf8 50\cf4 )\cf2 ;\
+\
+        \cf4 a.setColor(c)\cf2 ;\
+        \cf4 a.fillOval(x\cf2 ,\cf4 y\cf2 ,\cf4 size/\cf8 2\cf2 ,\cf4 size/\cf8 2\cf4 )\cf2 ;\
+        \cf4 a.fillOval(x \cf2 ,\cf4 y + size/\cf8 2 \cf2 ,\cf4 size/\cf8 2\cf2 ,\cf4 size/\cf8 2\cf4 )\cf2 ;\
+        \cf4 a.fillOval(x + size/\cf8 2\cf2 ,\cf4 y \cf2 ,\cf4 size/\cf8 2\cf2 ,\cf4 size/\cf8 2\cf4 )\cf2 ;\
+        \cf4 a.fillOval(x + size/\cf8 2\cf2 ,\cf4 y + size/\cf8 2\cf2 ,\cf4 size/\cf8 2\cf2 ,\cf4 size/\cf8 2\cf4 )\cf2 ;\
+\
+        \cf4 a.setColor(Color.
+\f1\i \cf6 BLACK
+\f0\i0 \cf4 )\cf2 ;\
+        \cf4 a.fillOval(x + size/\cf8 4\cf2 , \cf4 y+size/\cf8 4\cf2 , \cf4 size/\cf8 2\cf2 , \cf4 size/\cf8 2\cf4 )\cf2 ;\
+\
+    \cf4 \}\
+\
+\
+\
+\}\
+}

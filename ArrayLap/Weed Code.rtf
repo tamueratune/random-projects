@@ -1,0 +1,61 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;\f1\fmodern\fcharset0 Courier-Oblique;}
+{\colortbl;\red255\green255\blue255;\red191\green100\blue38;\red32\green32\blue32;\red153\green168\blue186;
+\red109\green109\blue109;\red133\green96\blue154;\red254\green187\blue91;\red86\green132\blue173;}
+{\*\expandedcolortbl;;\csgenericrgb\c74902\c39216\c14902;\csgenericrgb\c12549\c12549\c12549;\csgenericrgb\c60000\c65882\c72941;
+\csgenericrgb\c42745\c42745\c42745;\csgenericrgb\c52157\c37647\c60392;\csgenericrgb\c99608\c73333\c35686;\csgenericrgb\c33725\c51765\c67843;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs26 \cf2 \cb3 import \cf4 javax.swing.*\cf2 ;\
+import \cf4 java.awt.*\cf2 ;\
+import \cf4 java.util.Objects\cf2 ;\
+\
+public class \cf4 Weed \cf2 extends \cf4 Plant\{\
+        \cf5 //fields\
+        \cf2 private \cf4 ImageIcon \cf6 image\cf2 ;\
+        private \cf4 Point \cf6 pos\cf2 ;\
+\
+        \cf4 ImageIcon \cf6 weed\cf2 ;\
+\
+\
+       \cf5 //constructors\
+        \cf2 public \cf7 Weed\cf4 () \{\
+              \cf5 //  weed = new ImageIcon("weed.png");\
+               // pos = new Point();\
+                //int x = 0;\
+                //int y = 0;\
+\
+        \cf4 \}\
+\
+        \cf2 public \cf7 Weed\cf4 (\cf2 int \cf4 x\cf2 , int \cf4 y) \{\
+              \cf5 //  pos = new Point(x, y);\
+              //  weed = new ImageIcon("weed.png");\
+\
+\
+        \cf4 \}\
+\
+\
+        \cf2 public void \cf7 draw \cf4 (Graphics a) \{\
+                \cf5 //weed.paintIcon(null, a ,pos.x, pos.y);\
+                //drawWeed(a,pos.x,pos.y, 40);\
+\
+\
+        \cf4 \}\
+        \cf5 //extra credit Weed.\
+        \cf2 public void \cf7 drawWeed\cf4 (Graphics a\cf2 , int \cf4 x\cf2 , int \cf4 y\cf2 , int \cf4 size)\{\
+                a.setColor(Color.
+\f1\i \cf6 GREEN
+\f0\i0 \cf4 .darker())\cf2 ;\
+                \cf4 a.fillRect(x + \cf8 2\cf2 ,\cf4 y\cf2 ,\cf8 5\cf2 ,\cf8 70\cf4 )\cf2 ;\
+                \cf4 a.fillRoundRect(x + \cf8 1\cf2 ,\cf4 y + \cf8 5\cf2 ,\cf8 20\cf2 ,\cf8 10\cf2 ,\cf8 200\cf2 ,\cf8 200\cf4 )\cf2 ;\
+                \cf4 a.fillRoundRect(x + \cf8 1\cf2 ,\cf4 y + \cf8 40\cf2 ,\cf8 20\cf2 ,\cf8 10\cf2 ,\cf8 200\cf2 ,\cf8 200\cf4 )\cf2 ;\
+                \cf4 a.fillRoundRect(x - \cf8 18\cf2 ,\cf4 y + \cf8 25\cf2 ,\cf8 20\cf2 ,\cf8 10\cf2 ,\cf8 200\cf2 ,\cf8 200\cf4 )\cf2 ;\
+\
+\
+        \cf4 \}\
+\
+\
+\}\
+\
+}
